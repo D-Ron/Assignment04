@@ -1,0 +1,202 @@
+<!doctype html>
+<html>
+<head>
+    <title>Assignment 4.1</title>
+    <script type ="text/javascript"></script>
+                    
+</head>
+<body>
+    <h1>Assignment 4.1 - OOP Concepts</h1>
+    <script type ="text/javascript">
+/* ------------          ------------ */   
+
+
+// Task 1 ----------------     
+/*      
+        var ANIMAL = ANIMAL || {};    
+        var ANIMAL.Cat = function(breed){   // using Namespace as object for cat
+            this.breed = breed;
+            window.console.log("I just created an instance of a " + this.breed);            
+        } 
+        
+        var ANIMAL.Dog = function(breed){  // using Namespace as object for dog
+            this.breed = breed;
+            window.console.log("I just created an instance of a " + this.breed);            
+        } 
+    
+        var wilbur = new Animal("poodle");
+  */   
+
+        
+// Task 2  ----------------      
+/*         
+        // literal notation
+        var Cat = {
+            breed: "short hair",
+            color: "black"
+        }
+        
+        // Object Constructor Notation
+        function Dog() {
+            this.breed = "shiba";
+            this.color = "orange";
+        }
+        
+// Task 3 -----        
+        var hiro = new Dog();
+        //window.console.log(hiro.name);
+        window.console.log(hiro.breed);
+        window.console.log(hiro.color);        
+   */    
+
+// Task 4  ----------------     
+    
+    /* 
+    function Animal() {
+        window.console.log("A new animal has been created " )
+    };
+    var luffy = new Animal();    
+       */  
+        
+// Task 5  ----------------     
+    
+    /*    
+    function Animal(name) {
+        this.name = name;
+        window.console.log("A new animal has been created called " + this.name );
+    };
+    var luffy = new Animal("Luffy");    
+   */ 
+        
+  
+// Task 6  ----------------     
+    
+    /*      
+    function Animal(name, breed, color, height, length) {
+        this.name = name;
+        this.breed = breed;
+        this.color = color;
+        this.height = height;
+        this.length = length;
+        window.console.log("A new animal has been created with the following parameters: " + this.height + " " + this.length + " " + this.color + " " + this.breed + " called " + this.name);
+    };
+    var peanut = new Animal("Peanut", "Chihuahua", "brown", "short", "small");    
+    */ 
+        
+   
+ // Task 7  ----------------   
+        /*     
+    
+   function Animal(name, type, breed, color, height, length) {
+        this.name = name;
+        this.type = type;       
+        this.breed = breed;
+        this.color = color;
+        this.height = height;
+        this.length = length;
+    };      
+   var Cat = new Animal("Winter", "cat", "Scottish Fold", "white", "petite", "small");            
+        
+        for (var description in Cat) {
+        window.console.log(description + " " + Cat[description]);
+        };
+*/ 
+
+  
+        
+// Task 8  ---------------- 
+           
+/*       
+   function Animal(name, type, breed, color, height, length) {
+        this.name = name;
+        this.type = type;
+        this.breed = breed;
+        this.color = color;
+        this.height = height;
+        this.length = length;
+    };
+        
+Animal.prototype.speak = function() {
+    if (this.type == "dog") {
+       window.console.log(this.name + " the " + this.color + " " + this.breed + " " + this.type + " barked at you!");
+    } else if (this.type == "cat")  {
+        window.console.log(this.name + " the " + this.color + " " + this.breed + " " + this.type + " meowed!");
+    }
+}        
+  
+var hiro = new Animal("Hiro", "dog", "Shiba Inu", "orange", "medium", "petite");   
+        hiro.speak();
+        
+        
+var cotton = new Animal("Cotton", "cat", "munchkin", "white", "small", "petite");    
+        cotton.speak();
+   */        
+        
+        
+        
+        
+// Task 9  ---------------- private properties
+           
+/*    
+   function Animal(name, type, breed, color, height, length) {
+        var name = name;
+        var type = type;
+        var breed = breed;
+        var color = color;
+        var height = height;
+        var length = length;
+        var speak = checkType;
+        };
+
+       var checkType = function() {
+           var dog;
+           var cat;
+     
+            if (type == "dog") {
+                return dog = window.console.log("You have reached the dog selection - " + type);
+            }   
+            else if (type == "cat") {
+                return cat = window.console.log("You have reached the cat selection - " + type);         
+            };
+       };
+
+       
+    var tula = new Animal("Tula", "cat", "Scottish fold", "grey", "medium", "medium");
+        tula.checkType; // this works with prototype. but not with var checkType = function() 
+        
+ */ 
+        
+        
+        
+// Task 10  ---------------- findWords()  string Method   
+        
+        
+      /*           
+  
+    var paragraphSearch = "How now brown cow?"    
+        
+        function findWords() {
+        var numberOfTimes = paragraphSearch.match(/ow/gi);
+            
+        window.console.log("The letters 'ow' occurred " + numberOfTimes.length + " times.");
+        };
+        
+        findWords();
+    */
+       
+        
+        
+        
+
+// End of tasks for Assignment 4.1  See Assignment 4.2 for Recipe Assignment
+        
+        
+  
+    </script>
+    </body>  
+    
+    
+  
+    
+    
+</html>
